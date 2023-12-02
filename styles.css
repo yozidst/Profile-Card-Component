@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 
 :root {
 
@@ -10,7 +10,7 @@
     
     --fs-name-and-stats: 18px;
 
-    --ff-Kumbh-Sans: "Kumbh Sans" sans-serif;
+    --ff-Kumbh-Sans: "Kumbh Sans";
 
     --fw-regular: 400;
     --fw-bold: 700;
@@ -23,12 +23,13 @@
 }
 
 body {
+    font-family: var(--ff-Kumbh-Sans);
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
     background-attachment: fixed;
-    background: url('images/bg-pattern-top.svg') -25% 100% no-repeat, url('images/bg-pattern-bottom.svg') 125% -150% no-repeat;  
+    background: url('images/bg-pattern-top.svg') -40% 200% no-repeat, url('images/bg-pattern-bottom.svg') 130% -148% no-repeat;  
     background-color: var(--color-primary-dark-cyan);
     display: flex;
     flex-direction: column;
@@ -46,19 +47,83 @@ img {
 .container > .contend {
     border-radius: 15px;
     width: 300px;
-    height: 300px;
-    background-color: var(--color-dark-gray);
-
+    height: 327px;
+    background-color: #fff;
+    position: relative;
 }
 
 .pattern-card img{
     border-radius: 15px 15px 0 0;
     width: 100%;
-
-}
-
-.contend {
-
 }
 
 
+.profile-pic {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(0, -50%);
+}
+
+.profile-pic img {
+    object-fit: cover;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: solid 5px #fff;
+ 
+}
+
+
+.personal-info {  
+    border-bottom: solid 1px var(--color-dark-grayish-blue);
+    transform: translate(0, -65%);
+    padding-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: .5;
+
+}
+
+.age {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-dark-grayish-blue);
+    padding-left: 3px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--color-dark-grayish-blue);
+}
+
+
+
+.social-stats {
+    display: flex;
+    justify-content: space-evenly;
+    transform: translate(0, -50%);
+}
+
+h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 0.2;
+}
+
+p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.2;
+    color: var(--color-dark-gray);
+    letter-spacing: 1px;
+}
